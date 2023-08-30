@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Qwigley&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script nonce="198c397b-e387-4dac-b7a9-6119dc0aba96">(function(w,d){!function(db,dc,dd,de){db[dd]=db[dd]||{};db[dd].executed=[];db.zaraz={deferred:[],listeners:[]};db.zaraz.q=[];db.zaraz._f=function(df){return async function(){var dg=Array.prototype.slice.call(arguments);db.zaraz.q.push({m:df,a:dg})}};for(const dh of["track","set","debug"])db.zaraz[dh]=db.zaraz._f(dh);db.zaraz.init=()=>{var di=dc.getElementsByTagName(de)[0],dj=dc.createElement(de),dk=dc.getElementsByTagName("title")[0];dk&&(db[dd].t=dc.getElementsByTagName("title")[0].text);db[dd].x=Math.random();db[dd].w=db.screen.width;db[dd].h=db.screen.height;db[dd].j=db.innerHeight;db[dd].e=db.innerWidth;db[dd].l=db.location.href;db[dd].r=dc.referrer;db[dd].k=db.screen.colorDepth;db[dd].n=dc.characterSet;db[dd].o=(new Date).getTimezoneOffset();if(db.dataLayer)for(const dp of Object.entries(Object.entries(dataLayer).reduce(((dq,dr)=>({...dq[1],...dr[1]})),{})))zaraz.set(dp[0],dp[1],{scope:"page"});db[dd].q=[];for(;db.zaraz.q.length;){const ds=db.zaraz.q.shift();db[dd].q.push(ds)}dj.defer=!0;for(const dt of[localStorage,sessionStorage])Object.keys(dt||{}).filter((dv=>dv.startsWith("_zaraz_"))).forEach((du=>{try{db[dd]["z_"+du.slice(7)]=JSON.parse(dt.getItem(du))}catch{db[dd]["z_"+du.slice(7)]=dt.getItem(du)}}));dj.referrerPolicy="origin";dj.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(db[dd])));di.parentNode.insertBefore(dj,di)};["complete","interactive"].includes(dc.readyState)?zaraz.init():db.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>
+    <script defer="" referrerpolicy="origin" src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyRm9vdGVyJTIwMDMlMjIlMkMlMjJ4JTIyJTNBMC4zMDI5ODkzNTA0MzYxNTIwNSUyQyUyMnclMjIlM0ExOTIwJTJDJTIyaCUyMiUzQTEwODAlMkMlMjJqJTIyJTNBOTMxJTJDJTIyZSUyMiUzQTE5MjAlMkMlMjJsJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZwcmV2aWV3LmNvbG9ybGliLmNvbSUyRnRoZW1lJTJGYmZ0JTJGYm9vdHN0cmFwLWZvb3Rlci0xMyUyRiUyMiUyQyUyMnIlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmNvbG9ybGliLmNvbSUyRiUyMiUyQyUyMmslMjIlM0EyNCUyQyUyMm4lMjIlM0ElMjJVVEYtOCUyMiUyQyUyMm8lMjIlM0EtMzMwJTJDJTIycSUyMiUzQSU1QiU1RCU3RA=="></script>
+    
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <p class="logo">Hot Meals</p>
+            </div>
+
+            <div class="col-sm-4">
+                <!-- <div class="delivery">Deliver to:</div> -->
+                <!-- <div class="lo-icon"></div> -->
+                 <div class="Current"><strong>Deliver to:</strong> <img src="map-marker-alt.png" alt="location icon"> Current Location<strong> Ashok Nagar, Chennai-600013</strong></div>
+                <!-- <div class="address">Ashok Nagar, Chennai-600013</div> -->
+            </div>
+
+            <div class="col-sm-3">
+                <p class="Search"><img src="Search.png" alt="Search"><strong> Search Food</strong></p>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="profile"><button type="button" class="btn btn-outline-warning"><img src="user.png" alt="profile"> Login</button></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div>
+    <div class="div-box">
+        
+        <div class="row">
+            <div class=""><p class="heading">Look at your fav Meals</p></div>
+        </div>
+
+        <div class="row">
+            <div class=""><p class="sub-heading"><strong> a few clicks, find meals that are accessible near you</strong></p></div>
+        </div>
+
+        <div class="left-image"><img src="pngegg 1.png" alt=""></div>
+
+        <div class="inside-box1">
+                <div class="button-box"><img src="bikeIcon.png"><b>Delivery</b></div>
+                <div class="button-box2"><img src="BagIcon.png"><b>Pickup</b></div>
+        </div>    
+
+        <div class="inside-box2">
+            <div class="button-box3"><img src="locationIcon.png"><b>Enter Your Address</b></div>
+            <div class="button-box4"><img src="searchIcon.png"><b>Find Food</b></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <img class="image" src="vada.png" alt="vada">
+                <div class="name1"><b>Vada</b></div>
+                <div class="button-boxer"><b>30 min Delivery</b></div>
+            </div>
+
+            <div class="col-sm-3">
+                <img class="image" src="idle.png" alt="vada">
+                <div class="name1"><b>Idly</b></div>
+                <div class="button-boxer"><b>30 min Delivery</b></div>
+            </div>
+
+            <div class="col-sm-3">
+                <img class="image" src="porotta.png" alt="vada">
+                <div class="name1"><b>Parotta</b></div>
+                <div class="button-boxer"><b>30 min Delivery</b></div>
+            </div>
+
+            <div class="col-sm-3">
+                <img class="image" src="pongal.png" alt="vada">
+                <div class="name1"><b>Kichadi</b></div>
+                <div class="button-boxer"><b>30 min Delivery</b></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <p class="second-title">How does it work</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="white-box">
+
+            <div class="row">
+
+                <div class="col">
+                    <img class="discount" src="discountIcon.png" alt="">
+                    <img class="discount2" src="dailydiscount.png" alt="">
+                    <img class="HR" src="HR.png" alt="">
+                </div>
+
+                <div class="col">
+                    <img class="discount" src="locationbigIcon.png" alt="">
+                    <img class="discount2" src="liveTracing.png" alt="">
+                    <img class="HR" src="HR.png" alt="">
+                </div>
+
+                <div class="col">
+                    <img class="discount" src="TimeIcon.png" alt="">
+                    <img class="discount2" src="Quickdelivery.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="graycolor">
+            <p class="second-title2">Search by Food</p>
+            <div class="container">
+            <div class="row">
+            <div class="col">
+                <img class="roundimg" src="Dosa.png"></img>
+                <div class="name2"><b>Vada</b></div>
+            </div>
+ 
+            <div class="col">
+                <img class="roundimg2" src="Aappam.png"></img>
+                <div class="name2"><b>Aapppm</b></div>
+            </div>
+ 
+            <div class="col">
+                <img class="roundimg3" src="Puttu.png"></img>
+                <div class="name2"><b>Puttu</b></div>
+            </div>
+ 
+            <div class="col">
+                <img class="roundimg4" src="Idiyappam.png"></img>
+                <div class="name2"><b>Idiyappam</b></div>
+            </div>
+
+            <div class="col">
+                <img class="roundimg5" src="pongal2.png"></img>
+                <div class="name2"><b>Pongal</b></div>
+            </div>
+ 
+            <div class="col">
+                <img class="roundimg6" src="Veg Rice.png"></img>
+                <div class="name2"><b>Veg Rice</b></div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+        <div class="BDCD">Best deals <span class="orange">Crispy<br>Diffen</span></div>
+        <div class="graytext">Enjoy the large size of Dosa. Complete <br>perfect slice of Dosa.</div></div>
+        <div class="button-long"><strong>Proceed to order</strong><img src="CHEVRON-RIGHT.png" alt=""></div>
+        <div class="col"><img class="right-side" src="big idli.png"></div>
+    </div>
+
+
+    <div class="Popular-item"><center><h1><strong>Popular items</strong></h1></center></div>
+
+
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-2">
+                <div class="card"><img src="murukku.png">
+                </div>
+                <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+                <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+          <div class="col-md-2">
+            <div class="card"><img src="panniyam.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+       
+        <div class="col-md-2">
+            <div class="card"><img src="seeval.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+          <div class="col-md-2">
+            <div class="card"><img src="mixture.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+        <div class="col-md-2">
+            <div class="card"><img src="veg.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+    </div><br>
+
+<div class="top">
+    <div class="row">
+        <div class="col-md-2">
+                <div class="card"><img src="Rectangle 339.png">
+                </div>
+                <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+                <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+          <div class="col-md-2">
+            <div class="card"><img src="Rectangle 340.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+       
+        <div class="col-md-2">
+            <div class="card"><img src="Rectangle 341.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+          <div class="col-md-2">
+            <div class="card"><img src="Rectangle 342.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+        <div class="col-md-2">
+            <div class="card"><img src="Rectangle 343.png" /></div>
+            <center><p class="muruku margin"></p><b>Murukku</b></p></center>
+            <div class="orangebutton"><b>Order Now</b></div>
+        </div>
+    </div>
+</div>
+    </div>
+</cen>
+
+        <div class="foot">
+            <div class="container-fluid">
+        <div class="container border-top">
+        <div class="below">
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-4 mb-md-0 mb-4">
+<h2 class="footer-heading">Company</h2>
+<ul class="list-unstyled">
+<li><c href="#" class="py-1 d-block">About us</c></li>
+<li><c href="#" class="py-1 d-block">Team</c></li>
+<li><c href="#" class="py-1 d-block">Careers</c></li>
+<li><c href="#" class="py-1 d-block">Blog</c></li>
+</ul>
+</div>
+<div class="col-md-4 mb-md-0 mb-4">
+<h2 class="footer-heading">Contact</h2>
+<ul class="list-unstyled">
+<li><c href="#" class="py-1 d-block">Help & Support</c></li>
+<li><c href="#" class="py-1 d-block">Partner with us </c></li>
+<li><c href="#" class="py-1 d-block">Ride with us</c></li>
+</ul>
+</div>
+<div class="col-md-4 mb-md-0 mb-4">
+<h2 class="footer-heading">Legal</h2>
+<ul class="list-unstyled">
+<li><c href="#" class="py-1 d-block">Terms & Conditions</c></li>
+<li><c href="#" class="py-1 d-block">Refund & Cancellation</c></li>
+<li><c href="#" class="py-1 d-block">Privacy Policy</c></li>
+<li><c href="#" class="py-1 d-block">Cookie Policy</c></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row justify-content-end">
+<div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+<h2 class="footer-heading"><span class="blur">Follow Us</span></h2>
+<ul class="ftco-footer-social p-0"><span class="blur">
+    <img class="iconspace" src="ionsta.png">
+    <img class="iconspace" src="fb.png">
+    <img class="iconspace" src="twitter.png">
+</span>
+</ul>
+<h2 class="footer-heading mt-5"><span class="grayre">Receive exclusive offers in your mailbox</span></h2>
+<div class="row">
+<box class="col"><img class="searchbox"  src="Text Field.png" alt=""></box>
+<box class="col"><div class="searchbox2"><b>Subscribe</b></div></box>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-5 pt-4 border-top">
+
+<p class="copyright col">All rights Reserved ©</p>
+<p class="leftspace col">Made with 💛 by<b> Athi </b></p>
+
+</div>
+</div>
+</div>
+</div>
+            </div>
+        </div>
+
+
+        <script src="js/bootstrap.min.js"></script>
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon="{&quot;rayId&quot;:&quot;7fea477d3f209f74&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
